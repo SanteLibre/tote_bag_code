@@ -1,0 +1,173 @@
+<section class="container readable o_website_form_builder">
+        <form accept-charset="UTF-8" action="/website_form/" class="s_website_form col-md-12 mt32" data-model_name="helpdesk.ticket" data-force_action="" data-success_page="" enctype="multipart/form-data" method="post">
+          <div class="o_website_form_fields">
+            <div class="o_not_editable d-none o_default_snippet_text"> This placeholder prevents its parent from disappearing when emptied </div>
+            <div class="form-group form-field o_required form-field-char css_non_editable_mode_hidden" data-model-field="true" data-optional="false">
+              <label class="control-label" for="name">
+                <span>Sujet</span>
+              </label>
+              <input name="name" required="required" class="form-control o_website_form_input" type="text" value="Devenir fournisseur"/>
+            </div>
+            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
+              <label class="control-label" for="partner_name">
+                <span> Nom</span>
+              </label>
+              <input name="partner_name" class="form-control o_website_form_input" type="text"/>
+            </div>
+            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
+              <label class="control-label" for="partner_address">
+                <span> Adresse&amp;nbsp;</span>
+              </label>
+              <input name="partner_address" class="form-control o_website_form_input" type="text"/>
+            </div>
+            <div class="form-field form-field-text form-group o_required" data-model-field="true" data-optional="false">
+              <label class="control-label" for="description">
+                <span>Région administrative</span>
+              </label>
+              <textarea name="description" required="required" class="form-control o_website_form_input" type="text" value="NA"/>
+              <a href="https://www.mamh.gouv.qc.ca/organisation-municipale/organisation-territoriale/regions-administratives/">Régions administratives du Québec</a>
+            </div>
+            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
+              <label class="control-label" for="partner_email">
+                <span> Courriel </span>
+              </label>
+              <input name="partner_email" class="form-control o_website_form_input" type="text"/>
+            </div>
+            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
+              <label class="control-label" for="partner_phone">
+                <span> Téléphone </span>
+              </label>
+              <input name="partner_phone" class="form-control o_website_form_input" type="text"/>
+            </div>
+            <div class="form-group form-field  form-field-char" data-model-field="false" data-optional="true">
+              <label class="control-label" for="Custom Short text field">
+                <span>Compagnie / Société (à mentionner si les ressources de la compagnie sont utilisées)&amp;nbsp;</span>
+              </label>
+              <input name="Compagnie / Société (à mentionner si les ressources de la compagnie sont utilisées)" class="form-control o_website_form_input" type="text"/>
+            </div>
+            <div class="form-group form-field  form-field-many2many" data-model-field="false" data-optional="true">
+              <label class="control-label" for="Custom Multiple selection field">
+                <span>Type de services</span>
+              </label>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Type de services" type="checkbox" class="o_website_form_input" value="Imprimante 3D FDM"/>
+                  <span>Imprimante 3D FDM<br/></span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Type de services" type="checkbox" class="o_website_form_input" value="Imprimante 3D SLA"/>
+                  <span>Imprimante 3D SLA<br/></span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Type de services" type="checkbox" class="o_website_form_input" value="Découpe Laser"/>
+                  <span>Découpe Laser</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Type de services" type="checkbox" class="o_website_form_input" value="Machine à coudre"/>
+                  <span>Machine à coudre</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Type de services" type="checkbox" class="o_website_form_input" value="CNC"/>
+                  <span>CNC</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Type de services" type="checkbox" class="o_website_form_input" value="Livraison"/>
+                  <span>Livraison</span>
+                </label>
+              </div>
+              <p class="help-block">SVP nous indiquer les machines dont vous avez accès.<br/></p>
+            </div>
+            <div class="form-group form-field  form-field-text" data-model-field="false" data-optional="true">
+              <label class="control-label" for="Custom Long text field">
+                <span>Autres machine(s) disponible(s)</span>
+              </label>
+              <textarea name="Autres machine(s) disponible(s)" class="form-control o_website_form_input" type="text"/>
+              <p class="help-block">SVP, spécifier pour chacune des machines, le nombre, la marque, les spécifications (longueur / largeur / hauteur).<br/></p>
+            </div>
+            <div class="form-group form-field  form-field-text" data-model-field="false" data-optional="true">
+              <label class="control-label" for="Custom Long text field">
+                <span>Dimension des imprimantes 3D</span>
+              </label>
+              <textarea name="Dimension des imprimantes 3D" class="form-control o_website_form_input" type="text"/>
+              <p class="help-block">SVP, spécifier pour chacune des machines, le nombre, la marque, les spécifications (longueur / largeur / hauteur).<br/></p>
+            </div>
+            <div class="form-group form-field  form-field-many2many" data-model-field="false" data-optional="true">
+              <label class="control-label" for="Custom Multiple selection field">
+                <span>Matériaux disponibles d'impression 3D</span>
+              </label>
+              <br/>
+              <label class="control-label" for="Custom Multiple selection field"> </label>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Matériaux disponibles d'impression 3D" type="checkbox" class="o_website_form_input" value="PLA"/>
+                  <span>PLA</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Matériaux disponibles d'impression 3D" type="checkbox" class="o_website_form_input" value="ABS"/>
+                  <span>ABS</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Matériaux disponibles d'impression 3D" type="checkbox" class="o_website_form_input" value="Nylon"/>
+                  <span>Nylon</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="control-label">
+                  <input name="Matériaux disponibles d'impression 3D" type="checkbox" class="o_website_form_input" value="Autres"/>
+                  <span>Autres</span>
+                </label>
+              </div>
+              <p class="help-block"> </p>
+            </div>
+            <div class="form-group form-field  form-field-text" data-model-field="false" data-optional="true">
+              <label class="control-label" for="Custom Long text field">
+                <span>Autres matériaux&amp;nbsp;disponibles</span>
+              </label>
+              <textarea name="Autres matériaux disponibles" class="form-control o_website_form_input" type="text"/>
+              <p class="help-block">&amp;nbsp; Mentionnez les types de matériaux selon votre imprimante.<br/></p>
+            </div>
+            <div class="form-group form-field  form-field-many2one css_non_editable_mode_hidden" data-model-field="true" data-optional="true">
+              <label class="control-label" for="team_id">
+                <span> Équipe </span>
+              </label>
+              <select name="team_id" class="form-control o_website_form_input">
+                <option/>
+                <option value="1"> Service </option>
+                <option value="2" selected="selected"> Gestion fournisseur </option>
+                <option value="3"> Joindre l'équipe </option>
+              </select>
+            </div>
+            <div class="form-group form-field  form-field-many2one css_non_editable_mode_hidden" data-model-field="true" data-optional="true">
+              <label class="control-label" for="category_id">
+                <span>
+                    Catégorie
+                </span>
+              </label>
+              <select name="category_id" class="form-control o_website_form_input">
+                <option/>
+                <option value="7" selected="selected">
+                        Joindre fournisseur
+                    </option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-primary btn-lg o_website_form_send" data-original-title="" title="" aria-describedby="tooltip221699">Je m'inscris</button>
+            <span id="o_website_form_result"/>
+          </div>
+        </form>
+      </section>
